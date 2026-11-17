@@ -7,7 +7,16 @@
         mc:Ignorable="d"
         Title="Продукты" Height="450" Width="800">
     <Grid>
-        <ScrollViewer>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Image Source="/Resources/ico/Чудо Обувь.png" Height="50" Width="50" HorizontalAlignment="Left" />
+            <TextBlock Text="Чудо обувь" VerticalAlignment="Center" Margin="10"/>
+        </StackPanel>
+        
+        <ScrollViewer Grid.Row="1">
             <ItemsControl Name="ProductList">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
