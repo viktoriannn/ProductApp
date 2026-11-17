@@ -1,0 +1,102 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\ico\Чудо Обувь.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\ico\Чудо Обувь.ico" />
+    <None Remove="Resources\ico\Чудо Обувь.png" />
+    <None Remove="Resources\Images\IMG_KB_164811.png" />
+    <None Remove="Resources\Images\IMG_KB_164816.png" />
+    <None Remove="Resources\Images\IMG_KB_185501.png" />
+    <None Remove="Resources\Images\IMG_KSd_185508.png" />
+    <None Remove="Resources\Images\IMG_KSd_195207.png" />
+    <None Remove="Resources\Images\IMG_KSho_185512.png" />
+    <None Remove="Resources\Images\IMG_KS_195213.png" />
+    <None Remove="Resources\Images\IMG_KS_195217.png" />
+    <None Remove="Resources\Images\IMG_KS_195222.png" />
+    <None Remove="Resources\Images\IMG_MB_174349.png" />
+    <None Remove="Resources\Images\IMG_MB_191200.png" />
+    <None Remove="Resources\Images\IMG_MB_191205.png" />
+    <None Remove="Resources\Images\IMG_MSho_190514.png" />
+    <None Remove="Resources\Images\IMG_MSho_190518.png" />
+    <None Remove="Resources\Images\IMG_MSho_191612.png" />
+    <None Remove="Resources\Images\IMG_MS_185531.png" />
+    <None Remove="Resources\Images\IMG_MS_185532.png" />
+    <None Remove="Resources\Images\IMG_MS_185533.png" />
+    <None Remove="Resources\Images\IMG_WB_170859.png" />
+    <None Remove="Resources\Images\IMG_WB_170905.png" />
+    <None Remove="Resources\Images\IMG_WB_170906.png" />
+    <None Remove="Resources\Images\IMG_WSd_174332.png" />
+    <None Remove="Resources\Images\IMG_WSd_185156.png" />
+    <None Remove="Resources\Images\IMG_WSd_185551.png" />
+    <None Remove="Resources\Images\IMG_WSho_174409.png" />
+    <None Remove="Resources\Images\IMG_WSho_185202.png" />
+    <None Remove="Resources\Images\IMG_WSho_185545.png" />
+    <None Remove="Resources\Images\IMG_WS_174110.png" />
+    <None Remove="Resources\Images\IMG_WS_185528.png" />
+    <None Remove="Resources\Images\IMG_WS_185535.png" />
+    <None Remove="Resources\Images\IMG_WS_185538.png" />
+    <None Remove="Resources\picture.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\ico\Чудо Обувь.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\ico\Чудо Обувь.ico" />
+    <Resource Include="Resources\ico\Чудо Обувь.png" />
+    <Resource Include="Resources\Images\IMG_KB_164811.png" />
+    <Resource Include="Resources\Images\IMG_KB_164816.png" />
+    <Resource Include="Resources\Images\IMG_KB_185501.png" />
+    <Resource Include="Resources\Images\IMG_KSd_185508.png" />
+    <Resource Include="Resources\Images\IMG_KSd_195207.png" />
+    <Resource Include="Resources\Images\IMG_KSho_185512.png" />
+    <Resource Include="Resources\Images\IMG_KS_195213.png" />
+    <Resource Include="Resources\Images\IMG_KS_195217.png" />
+    <Resource Include="Resources\Images\IMG_KS_195222.png" />
+    <Resource Include="Resources\Images\IMG_MB_174349.png" />
+    <Resource Include="Resources\Images\IMG_MB_191200.png" />
+    <Resource Include="Resources\Images\IMG_MB_191205.png" />
+    <Resource Include="Resources\Images\IMG_MSho_190514.png" />
+    <Resource Include="Resources\Images\IMG_MSho_190518.png" />
+    <Resource Include="Resources\Images\IMG_MSho_191612.png" />
+    <Resource Include="Resources\Images\IMG_MS_185531.png" />
+    <Resource Include="Resources\Images\IMG_MS_185532.png" />
+    <Resource Include="Resources\Images\IMG_MS_185533.png" />
+    <Resource Include="Resources\Images\IMG_WB_170859.png" />
+    <Resource Include="Resources\Images\IMG_WB_170905.png" />
+    <Resource Include="Resources\Images\IMG_WB_170906.png" />
+    <Resource Include="Resources\Images\IMG_WSd_174332.png" />
+    <Resource Include="Resources\Images\IMG_WSd_185156.png" />
+    <Resource Include="Resources\Images\IMG_WSd_185551.png" />
+    <Resource Include="Resources\Images\IMG_WSho_174409.png" />
+    <Resource Include="Resources\Images\IMG_WSho_185202.png" />
+    <Resource Include="Resources\Images\IMG_WSho_185545.png" />
+    <Resource Include="Resources\Images\IMG_WS_174110.png" />
+    <Resource Include="Resources\Images\IMG_WS_185528.png" />
+    <Resource Include="Resources\Images\IMG_WS_185535.png" />
+    <Resource Include="Resources\Images\IMG_WS_185538.png" />
+    <Resource Include="Resources\picture.png" />
+  </ItemGroup>
+
+</Project>
