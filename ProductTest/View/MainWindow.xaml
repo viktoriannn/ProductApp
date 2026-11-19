@@ -9,14 +9,41 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal">
             <Image Source="/Resources/ico/Чудо Обувь.png" Height="50" Width="50" HorizontalAlignment="Left" />
             <TextBlock Text="Чудо обувь" VerticalAlignment="Center" Margin="10"/>
         </StackPanel>
-        
-        <ScrollViewer Grid.Row="1">
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="1" Name="userName" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
+            <Button Grid.Row="0" Grid.Column="2" Content="Выйти" Name="OutBtn" Click="OutBtn_Click" Width="50" Height="20" HorizontalAlignment="Right" Margin="10" VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Name="toolPanel">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Поиск" Margin="10"/>
+            <TextBox Grid.Column="1" Name="findBox" Width="250" Margin="5" TextChanged="findBox_TextChanged"/>
+            <TextBlock Grid.Column="2" Text="Сортировка" Margin="10"/>
+            <ComboBox Grid.Column="3" Name="sortBox" Width="150" Margin="5" SelectionChanged="sortBox_SelectionChanged"/>
+            <TextBlock Grid.Column="4" Text="Фильтр" Margin="10"/>
+            <ComboBox Grid.Column="5" Name="filterBox" Width="150" Margin="5" SelectionChanged="filterBox_SelectionChanged"/>
+        </Grid>
+        <ScrollViewer Grid.Row="2">
             <ItemsControl Name="ProductList">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
@@ -41,7 +68,8 @@
                                     <TextBlock Text="{Binding Structure}" TextWrapping="Wrap" HorizontalAlignment="Left"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Grid.Column="2">
-                                    <TextBlock Text="{Binding Price, StringFormat={}{0:N2} руб.}" HorizontalAlignment="Right" Margin="10"/>
+                                    <TextBlock Text="{Binding OldPrice, StringFormat={}{0:N2} руб.}" TextDecorations="Strikethrough" HorizontalAlignment="Right" Margin="10"/>
+                                    <TextBlock Text="{Binding DiscountPrice, StringFormat={}{0:N2} руб.}" HorizontalAlignment="Right" Margin="10"/>
                                 </StackPanel>
                             </Grid>
                         </Border>

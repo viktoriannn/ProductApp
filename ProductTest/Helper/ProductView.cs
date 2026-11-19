@@ -10,7 +10,9 @@ namespace ProductTest.Helper
         public string? Category { get; set; }
         public string? Structure { get; set; }
         public string? TotalStock { get; set; }
-        public decimal Price { get; set; }
+        public decimal DiscountPrice { get; set; }
+        public decimal OldPrice { get; set; }
         public Brush Background { get; set; } = Brushes.White;
+        public string? Description { get; set; }
     }
 }
